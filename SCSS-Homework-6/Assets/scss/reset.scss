@@ -1,0 +1,61 @@
+@import './variables.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;                                               
+}
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    line-height: 1.5;
+    font-size: 1em;
+}
+button, i{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+.btn{
+    border-radius: 30px;
+    border: 2px solid $primary;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 15px 32px;
+    transition: 0.3s ease-out;
+    &:hover{
+        background-color: $primary;
+        color: #1A1A1A;
+    }
+}
+
+.container{
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+@media(max-width:768px){
+    .container{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        font-size: 15px;
+    }
+}
+@media(max-width:420px){
+    .container{
+        font-size: 14px;
+    }
+}
